@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+.container{
+    margin: 15px;
+}
+
+.main-title{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin: 15px;
+}
+
+.item{
+    position: relative;
+    top: 0;
+    background-color: ghostwhite;
+    margin: 15px;
+    padding: 25px;
+    border: 1px solid black;
+}
+
+.item-title{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    color: white;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;    
+}
+
+#item-title1{
+    background-color: palevioletred;
+}
+
+#item-title2{
+    background-color: plum;
+}
+
+#item-title3{
+    background-color: hotpink;
+}
+
+.item p{
+    margin-top: 15px;
+    text-align: justify;
+    font-size: 100%;
+}
+
+@media (min-width: 992px){
+    .col-lg-1, .col-lg-2, .col-lg-3{
+        width: 33%;
+        float: left;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .col-lg-1, .col-lg-2{
+        width: 50%;
+        float: left;
+    }
+    .col-lg-3{
+        float: left;
+    }
+}
+
+@media (max-width: 767px){
+    .row{
+        width: 100%;
+    }
+    .col-lg-01, .col-lg-2, .col-lg-3{
+        float: left;
+    }
+}
+
